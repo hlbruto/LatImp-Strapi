@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favoritos",
+  "info": {
+    "singularName": "favorito",
+    "pluralName": "favoritos",
+    "displayName": "Favorito",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "src": {
+      "type": "text"
+    },
+    "userid": {
+      "type": "integer"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "favoritos"
+    }
+  }
+}
