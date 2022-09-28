@@ -1,5 +1,5 @@
 
-module.exports = ({env})=({
+module.exports = ({env}) => ({
     url:env('https://latimpar.herokuapp.com/'),
     proxy:true,
     app:{
